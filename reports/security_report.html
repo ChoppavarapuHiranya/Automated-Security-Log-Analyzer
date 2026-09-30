@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Security Log Analysis Report</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .summary {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Security Log Analysis Report</h1>
+
+<p>
+Generated: 2026-09-30 15:42:56
+</p>
+
+
+<h2>Event Summary</h2>
+
+<div class="summary">
+
+    <div class="card">
+        <h3>Linux Events</h3>
+        <p>9</p>
+    </div>
+
+    <div class="card">
+        <h3>Windows Events</h3>
+        <p>7</p>
+    </div>
+
+    <div class="card">
+        <h3>High Alerts</h3>
+        <p>2</p>
+    </div>
+
+    <div class="card">
+        <h3>Medium Alerts</h3>
+        <p>3</p>
+    </div>
+
+</div>
+
+
+<h2>Authentication Summary</h2>
+
+<ul>
+
+    <li>Linux Failed Logins: 7</li>
+
+    <li>Linux Successful Logins: 2</li>
+
+    <li>Windows Failed Logins: 5</li>
+
+    <li>Windows Successful Logins: 2</li>
+
+</ul>
+
+
+<h2>Detected Security Alerts</h2>
+
+<table>
+
+    <tr>
+        <th>Alert Type</th>
+        <th>Username</th>
+        <th>Source IP</th>
+        <th>Failed Attempts</th>
+        <th>Timestamp</th>
+        <th>Severity</th>
+    </tr>
+
+    
+        <tr>
+            <td>Possible Brute Force Attack</td>
+            <td>-</td>
+            <td>192.168.1.50</td>
+            <td>5</td>
+            <td>-</td>
+            <td>HIGH</td>
+        </tr>
+        
+        <tr>
+            <td>Repeated Authentication Failure</td>
+            <td>admin</td>
+            <td>-</td>
+            <td>5</td>
+            <td>-</td>
+            <td>MEDIUM</td>
+        </tr>
+        
+        <tr>
+            <td>Suspicious Source IP</td>
+            <td>-</td>
+            <td>192.168.1.50</td>
+            <td>5</td>
+            <td>-</td>
+            <td>MEDIUM</td>
+        </tr>
+        
+        <tr>
+            <td>Unusual Login Time</td>
+            <td>testuser</td>
+            <td>10.0.0.25</td>
+            <td>-</td>
+            <td>Sep 30 23:45:10</td>
+            <td>MEDIUM</td>
+        </tr>
+        
+        <tr>
+            <td>Windows Brute Force Attack</td>
+            <td>-</td>
+            <td>192.168.1.50</td>
+            <td>5</td>
+            <td>-</td>
+            <td>HIGH</td>
+        </tr>
+        
+
+</table>
+
+
+<h2>Analysis</h2>
+
+<p>
+The security log analyzer identified repeated authentication
+failures, suspicious source IP activity, unusual login timing,
+and potential brute-force attacks from the supplied security logs.
+</p>
+
+<p>
+The system analyzes both Linux authentication logs and
+Windows Security Event-style records and presents the detected
+security events in a consolidated analytical report.
+</p>
+
+</body>
+
+</html>
